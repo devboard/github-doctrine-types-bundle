@@ -1,0 +1,40 @@
+{
+    "name": "devboard/github-doctrine-types-bundle",
+    "license": "proprietary",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Devboard\\GitHub\\DoctrineTypesBundle\\": "src/",
+            "tests\\Devboard\\GitHub\\DoctrineTypesBundle\\": "tests/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "spec\\Devboard\\GitHub\\DoctrineTypesBundle\\": "spec/"
+        }
+    },
+    "require": {
+        "php":                                      ">=7.1.0",
+        "devboard/github-lib":                      "0.4.*@dev",
+        "devboard/github-doctrine-types":           "0.4.*@dev",
+        "symfony/http-kernel": "^3.3"
+    },
+    "require-dev": {
+        "phpmd/phpmd":                              "~2.1",
+        "squizlabs/php_codesniffer":                "^3.0",
+        "friendsofphp/php-cs-fixer":                "^2.0",
+        "phing/phing":                              "^2.15",
+        "phpstan/phpstan":                          "^0.7.0"
+    },
+    "config": {
+        "platform": {
+            "php": "7.1.0"
+        },
+        "bin-dir": "bin"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.4.x-dev"
+        }
+    }
+}
