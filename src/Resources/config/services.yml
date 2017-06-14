@@ -1,0 +1,4 @@
+services:
+#    devboard_git_hub_doctrine_types.example:
+#        class: Devboard\GitHub\DoctrineTypesBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
