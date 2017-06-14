@@ -39,44 +39,51 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
  */
 class DevboardGitHubDoctrineTypesBundle extends Bundle
 {
-    public function boot()
+    private $types = [
+        'GitHubBranchName' => GitHubBranchNameType::class,
+        'GitHubTagName'    => GitHubTagNameType::class,
+
+        'GitHubCommitAuthorEmail'    => GitHubCommitAuthorEmailType::class,
+        'GitHubCommitAuthorName'     => GitHubCommitAuthorNameType::class,
+        'GitHubCommitCommitterEmail' => GitHubCommitCommitterEmailType::class,
+        'GitHubCommitCommitterName'  => GitHubCommitCommitterNameType::class,
+        'GitHubCommitDate'           => GitHubCommitDateType::class,
+        'GitHubCommitMessage'        => GitHubCommitMessageType::class,
+        'GitHubCommitSha'            => GitHubCommitShaType::class,
+
+        'GitHubRepoApiUrl'      => GitHubRepoApiUrlType::class,
+        'GitHubRepoCreatedAt'   => GitHubRepoCreatedAtType::class,
+        'GitHubRepoDescription' => GitHubRepoDescriptionType::class,
+        'GitHubRepoGitUrl'      => GitHubRepoGitUrlType::class,
+        'GitHubRepoHtmlUrl'     => GitHubRepoHtmlUrlType::class,
+        'GitHubRepoId'          => GitHubRepoIdType::class,
+        'GitHubRepoFullName'    => GitHubRepoFullNameType::class,
+        'GitHubRepoName'        => GitHubRepoNameType::class,
+        'GitHubRepoPushedAt'    => GitHubRepoPushedAtType::class,
+        'GitHubRepoSize'        => GitHubRepoSizeType::class,
+        'GitHubRepoUpdatedAt'   => GitHubRepoUpdatedAtType::class,
+
+        'GitHubUserApiUrl'     => GitHubUserApiUrlType::class,
+        'GitHubUserAvatarUrl'  => GitHubUserAvatarUrlType::class,
+        'GitHubUserGravatarId' => GitHubUserGravatarIdType::class,
+        'GitHubUserHtmlUrl'    => GitHubUserHtmlUrlType::class,
+        'GitHubUserId'         => GitHubUserIdType::class,
+        'GitHubUserLogin'      => GitHubUserLoginType::class,
+        'GitHubUserType'       => GitHubUserTypeType::class,
+    ];
+
+    public function __construct()
     {
-        $this->addType('GitHubBranchName', GitHubBranchNameType::class);
-        $this->addType('GitHubTagName', GitHubTagNameType::class);
-
-        $this->addType('GitHubCommitAuthorEmail', GitHubCommitAuthorEmailType::class);
-        $this->addType('GitHubCommitAuthorName', GitHubCommitAuthorNameType::class);
-        $this->addType('GitHubCommitCommitterEmail', GitHubCommitCommitterEmailType::class);
-        $this->addType('GitHubCommitCommitterName', GitHubCommitCommitterNameType::class);
-        $this->addType('GitHubCommitDate', GitHubCommitDateType::class);
-        $this->addType('GitHubCommitMessage', GitHubCommitMessageType::class);
-        $this->addType('GitHubCommitSha', GitHubCommitShaType::class);
-
-        $this->addType('GitHubRepoApiUrl', GitHubRepoApiUrlType::class);
-        $this->addType('GitHubRepoCreatedAt', GitHubRepoCreatedAtType::class);
-        $this->addType('GitHubRepoDescription', GitHubRepoDescriptionType::class);
-        $this->addType('GitHubRepoGitUrl', GitHubRepoGitUrlType::class);
-        $this->addType('GitHubRepoHtmlUrl', GitHubRepoHtmlUrlType::class);
-        $this->addType('GitHubRepoId', GitHubRepoIdType::class);
-        $this->addType('GitHubRepoFullName', GitHubRepoFullNameType::class);
-        $this->addType('GitHubRepoName', GitHubRepoNameType::class);
-        $this->addType('GitHubRepoPushedAt', GitHubRepoPushedAtType::class);
-        $this->addType('GitHubRepoSize', GitHubRepoSizeType::class);
-        $this->addType('GitHubRepoUpdatedAt', GitHubRepoUpdatedAtType::class);
-
-        $this->addType('GitHubUserApiUrl', GitHubUserApiUrlType::class);
-        $this->addType('GitHubUserAvatarUrl', GitHubUserAvatarUrlType::class);
-        $this->addType('GitHubUserGravatarId', GitHubUserGravatarIdType::class);
-        $this->addType('GitHubUserHtmlUrl', GitHubUserHtmlUrlType::class);
-        $this->addType('GitHubUserId', GitHubUserIdType::class);
-        $this->addType('GitHubUserLogin', GitHubUserLoginType::class);
-        $this->addType('GitHubUserType', GitHubUserTypeType::class);
+        foreach ($this->types as $name => $type) {
+            if (false === Type::hasType($name)) {
+                Type::addType($name, $type);
+            }
+        }
     }
 
-    private function addType(string $name, string $typeClassName)
+    public function boot()
     {
-        if (false === Type::hasType($name)) {
-            Type::addType($name, $typeClassName);
+        foreach (array_keys($this->types) as $name) {
             $this->getDatabasePlatform()->registerDoctrineTypeMapping($name, $name);
         }
     }
