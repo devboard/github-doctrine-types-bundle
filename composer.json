@@ -15,8 +15,7 @@
     },
     "require": {
         "php":                                      ">=7.1.0",
-        "devboard/github-lib":                      "0.4.*@dev",
-        "devboard/github-doctrine-types":           "0.4.*@dev",
+        "devboard/github-doctrine-types":           "^0.5.0",
         "symfony/http-kernel": "^3.3"
     },
     "require-dev": {
