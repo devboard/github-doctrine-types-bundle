@@ -4,6 +4,13 @@ declare(strict_types=1);
 
 namespace Devboard\GitHub\DoctrineTypesBundle;
 
+use Devboard\GitHub\DoctrineTypes\Account\GitHubAccountApiUrlType;
+use Devboard\GitHub\DoctrineTypes\Account\GitHubAccountAvatarUrlType;
+use Devboard\GitHub\DoctrineTypes\Account\GitHubAccountGravatarIdType;
+use Devboard\GitHub\DoctrineTypes\Account\GitHubAccountHtmlUrlType;
+use Devboard\GitHub\DoctrineTypes\Account\GitHubAccountIdType;
+use Devboard\GitHub\DoctrineTypes\Account\GitHubAccountLoginType;
+use Devboard\GitHub\DoctrineTypes\Account\GitHubAccountTypeType;
 use Devboard\GitHub\DoctrineTypes\Branch\GitHubBranchNameType;
 use Devboard\GitHub\DoctrineTypes\Commit\GitHubCommitAuthorEmailType;
 use Devboard\GitHub\DoctrineTypes\Commit\GitHubCommitAuthorNameType;
@@ -30,7 +37,6 @@ use Devboard\GitHub\DoctrineTypes\User\GitHubUserGravatarIdType;
 use Devboard\GitHub\DoctrineTypes\User\GitHubUserHtmlUrlType;
 use Devboard\GitHub\DoctrineTypes\User\GitHubUserIdType;
 use Devboard\GitHub\DoctrineTypes\User\GitHubUserLoginType;
-use Devboard\GitHub\DoctrineTypes\User\GitHubUserTypeType;
 use Doctrine\DBAL\Types\Type;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
@@ -40,6 +46,14 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 class DevboardGitHubDoctrineTypesBundle extends Bundle
 {
     private $types = [
+        'GitHubAccountApiUrl'     => GitHubAccountApiUrlType::class,
+        'GitHubAccountAvatarUrl'  => GitHubAccountAvatarUrlType::class,
+        'GitHubAccountGravatarId' => GitHubAccountGravatarIdType::class,
+        'GitHubAccountHtmlUrl'    => GitHubAccountHtmlUrlType::class,
+        'GitHubAccountId'         => GitHubAccountIdType::class,
+        'GitHubAccountLogin'      => GitHubAccountLoginType::class,
+        'GitHubAccountType'       => GitHubAccountTypeType::class,
+
         'GitHubBranchName' => GitHubBranchNameType::class,
         'GitHubTagName'    => GitHubTagNameType::class,
 
@@ -69,7 +83,6 @@ class DevboardGitHubDoctrineTypesBundle extends Bundle
         'GitHubUserHtmlUrl'    => GitHubUserHtmlUrlType::class,
         'GitHubUserId'         => GitHubUserIdType::class,
         'GitHubUserLogin'      => GitHubUserLoginType::class,
-        'GitHubUserType'       => GitHubUserTypeType::class,
     ];
 
     public function __construct()
