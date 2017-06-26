@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "devboard/github-doctrine-types",
-            "version": "0.5.0",
+            "version": "0.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/devboard/github-doctrine-types.git",
-                "reference": "1df44c7cccb62816a8179c2171985f3cf40f4ace"
+                "reference": "b3be5e01b6bc0b1943f5208cf77b7d646251f629"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/devboard/github-doctrine-types/zipball/1df44c7cccb62816a8179c2171985f3cf40f4ace",
-                "reference": "1df44c7cccb62816a8179c2171985f3cf40f4ace",
+                "url": "https://api.github.com/repos/devboard/github-doctrine-types/zipball/b3be5e01b6bc0b1943f5208cf77b7d646251f629",
+                "reference": "b3be5e01b6bc0b1943f5208cf77b7d646251f629",
                 "shasum": ""
             },
             "require": {
@@ -54,7 +54,7 @@
             "license": [
                 "proprietary"
             ],
-            "time": "2017-06-26T17:22:54+00:00"
+            "time": "2017-06-26T17:43:39+00:00"
         },
         {
             "name": "devboard/github-lib",
