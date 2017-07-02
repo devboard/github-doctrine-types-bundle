@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "81a23048d126e31042f87a44cc18d6d2",
+    "content-hash": "6ed67ef4137cd1fcad7145a28c07072d",
     "packages": [
         {
             "name": "devboard/github-doctrine-types",
-            "version": "0.6.0",
+            "version": "0.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/devboard/github-doctrine-types.git",
-                "reference": "913cf928d182e1950f7cb7dccbf771b54badd019"
+                "reference": "761424954757b1d74ab45512f2b4a4cc7b9e1ad9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/devboard/github-doctrine-types/zipball/913cf928d182e1950f7cb7dccbf771b54badd019",
-                "reference": "913cf928d182e1950f7cb7dccbf771b54badd019",
+                "url": "https://api.github.com/repos/devboard/github-doctrine-types/zipball/761424954757b1d74ab45512f2b4a4cc7b9e1ad9",
+                "reference": "761424954757b1d74ab45512f2b4a4cc7b9e1ad9",
                 "shasum": ""
             },
             "require": {
@@ -54,7 +54,7 @@
             "license": [
                 "proprietary"
             ],
-            "time": "2017-07-01T19:17:58+00:00"
+            "time": "2017-07-02T12:41:24+00:00"
         },
         {
             "name": "devboard/github-lib",
