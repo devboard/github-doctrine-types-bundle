@@ -19,6 +19,17 @@ use Devboard\GitHub\DoctrineTypes\Commit\GitHubCommitCommitterNameType;
 use Devboard\GitHub\DoctrineTypes\Commit\GitHubCommitDateType;
 use Devboard\GitHub\DoctrineTypes\Commit\GitHubCommitMessageType;
 use Devboard\GitHub\DoctrineTypes\Commit\GitHubCommitShaType;
+use Devboard\GitHub\DoctrineTypes\Installation\GitHubApplicationIdType;
+use Devboard\GitHub\DoctrineTypes\Installation\GitHubInstallationAccessTokenUrlType;
+use Devboard\GitHub\DoctrineTypes\Installation\GitHubInstallationAccountType;
+use Devboard\GitHub\DoctrineTypes\Installation\GitHubInstallationCreatedAtType;
+use Devboard\GitHub\DoctrineTypes\Installation\GitHubInstallationEventsType;
+use Devboard\GitHub\DoctrineTypes\Installation\GitHubInstallationHtmlUrlType;
+use Devboard\GitHub\DoctrineTypes\Installation\GitHubInstallationIdType;
+use Devboard\GitHub\DoctrineTypes\Installation\GitHubInstallationPermissionsType;
+use Devboard\GitHub\DoctrineTypes\Installation\GitHubInstallationRepositoriesUrlType;
+use Devboard\GitHub\DoctrineTypes\Installation\GitHubInstallationRepositorySelectionType;
+use Devboard\GitHub\DoctrineTypes\Installation\GitHubInstallationUpdatedAtType;
 use Devboard\GitHub\DoctrineTypes\Repo\GitHubRepoApiUrlType;
 use Devboard\GitHub\DoctrineTypes\Repo\GitHubRepoCreatedAtType;
 use Devboard\GitHub\DoctrineTypes\Repo\GitHubRepoDescriptionType;
@@ -83,6 +94,18 @@ class DevboardGitHubDoctrineTypesBundle extends Bundle
         'GitHubUserHtmlUrl'    => GitHubUserHtmlUrlType::class,
         'GitHubUserId'         => GitHubUserIdType::class,
         'GitHubUserLogin'      => GitHubUserLoginType::class,
+
+        'GitHubInstallationId'                  => GitHubInstallationIdType::class,
+        'GitHubInstallationAccount'             => GitHubInstallationAccountType::class,
+        'GitHubApplicationId'                   => GitHubApplicationIdType::class,
+        'GitHubInstallationRepositorySelection' => GitHubInstallationRepositorySelectionType::class,
+        'GitHubInstallationPermissions'         => GitHubInstallationPermissionsType::class,
+        'GitHubInstallationEvents'              => GitHubInstallationEventsType::class,
+        'GitHubInstallationAccessTokenUrl'      => GitHubInstallationAccessTokenUrlType::class,
+        'GitHubInstallationRepositoriesUrl'     => GitHubInstallationRepositoriesUrlType::class,
+        'GitHubInstallationHtmlUrl'             => GitHubInstallationHtmlUrlType::class,
+        'GitHubInstallationCreatedAt'           => GitHubInstallationCreatedAtType::class,
+        'GitHubInstallationUpdatedAt'           => GitHubInstallationUpdatedAtType::class,
     ];
 
     public function __construct()
