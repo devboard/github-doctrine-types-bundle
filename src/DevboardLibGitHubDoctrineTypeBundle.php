@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Devboard\GitHub\DoctrineTypesBundle;
+namespace DevboardLib\GitHubDoctrineTypeBundle;
 
 use Devboard\GitHub\DoctrineTypes\Account\GitHubAccountApiUrlType;
 use Devboard\GitHub\DoctrineTypes\Account\GitHubAccountAvatarUrlType;
@@ -54,7 +54,7 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 /**
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
-class DevboardGitHubDoctrineTypesBundle extends Bundle
+class DevboardLibGitHubDoctrineTypeBundle extends Bundle
 {
     private $types = [
         'GitHubAccountApiUrl'     => GitHubAccountApiUrlType::class,

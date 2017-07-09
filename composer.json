@@ -4,13 +4,13 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "Devboard\\GitHub\\DoctrineTypesBundle\\": "src/",
-            "tests\\Devboard\\GitHub\\DoctrineTypesBundle\\": "tests/"
+            "DevboardLib\\GitHubDoctrineTypeBundle\\": "src/",
+            "tests\\DevboardLib\\GitHubDoctrineTypeBundle\\": "tests/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "spec\\Devboard\\GitHub\\DoctrineTypesBundle\\": "spec/"
+            "spec\\DevboardLib\\GitHubDoctrineTypeBundle\\": "spec/"
         }
     },
     "require": {
