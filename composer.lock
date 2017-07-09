@@ -4,24 +4,24 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6ed67ef4137cd1fcad7145a28c07072d",
+    "content-hash": "0d2d4abee889f882dd093ff8d78f7a5f",
     "packages": [
         {
             "name": "devboard/github-doctrine-types",
-            "version": "0.6.1",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/devboard/github-doctrine-types.git",
-                "reference": "761424954757b1d74ab45512f2b4a4cc7b9e1ad9"
+                "reference": "159412ebb4f56e52365732544d28a996b3d00eb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/devboard/github-doctrine-types/zipball/761424954757b1d74ab45512f2b4a4cc7b9e1ad9",
-                "reference": "761424954757b1d74ab45512f2b4a4cc7b9e1ad9",
+                "url": "https://api.github.com/repos/devboard/github-doctrine-types/zipball/159412ebb4f56e52365732544d28a996b3d00eb0",
+                "reference": "159412ebb4f56e52365732544d28a996b3d00eb0",
                 "shasum": ""
             },
             "require": {
-                "devboard/github-lib": "^0.6.0",
+                "devboard/github-lib": "^1.0",
                 "doctrine/dbal": "^2.5",
                 "php": ">=7.1.0"
             },
@@ -46,28 +46,28 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Devboard\\GitHub\\DoctrineTypes\\": "src/",
-                    "tests\\Devboard\\GitHub\\DoctrineTypes\\": "tests/"
+                    "DevboardLib\\GitHubDoctrineType\\": "src/",
+                    "tests\\DevboardLib\\GitHubDoctrineType\\": "tests/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
-            "time": "2017-07-02T12:41:24+00:00"
+            "time": "2017-07-09T18:05:01+00:00"
         },
         {
             "name": "devboard/github-lib",
-            "version": "0.6.0",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/devboard/github-lib.git",
-                "reference": "7458890728ef3460815b0902f3c52987bb34aacf"
+                "reference": "4074869ad3e222f2bb534f360640d8e4dd4d9a12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/devboard/github-lib/zipball/7458890728ef3460815b0902f3c52987bb34aacf",
-                "reference": "7458890728ef3460815b0902f3c52987bb34aacf",
+                "url": "https://api.github.com/repos/devboard/github-lib/zipball/4074869ad3e222f2bb534f360640d8e4dd4d9a12",
+                "reference": "4074869ad3e222f2bb534f360640d8e4dd4d9a12",
                 "shasum": ""
             },
             "require": {
@@ -94,20 +94,20 @@
             "type": "project",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.4.x-dev"
+                    "dev-master": "1.0.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Devboard\\GitHub\\": "src/",
-                    "tests\\Devboard\\GitHub\\": "tests/"
+                    "DevboardLib\\GitHub\\": "src/",
+                    "tests\\DevboardLib\\GitHub\\": "tests/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
-            "time": "2017-06-28T19:42:36+00:00"
+            "time": "2017-07-07T23:05:23+00:00"
         },
         {
             "name": "doctrine/annotations",
