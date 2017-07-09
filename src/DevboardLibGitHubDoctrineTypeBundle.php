@@ -4,50 +4,50 @@ declare(strict_types=1);
 
 namespace DevboardLib\GitHubDoctrineTypeBundle;
 
-use Devboard\GitHub\DoctrineTypes\Account\GitHubAccountApiUrlType;
-use Devboard\GitHub\DoctrineTypes\Account\GitHubAccountAvatarUrlType;
-use Devboard\GitHub\DoctrineTypes\Account\GitHubAccountGravatarIdType;
-use Devboard\GitHub\DoctrineTypes\Account\GitHubAccountHtmlUrlType;
-use Devboard\GitHub\DoctrineTypes\Account\GitHubAccountIdType;
-use Devboard\GitHub\DoctrineTypes\Account\GitHubAccountLoginType;
-use Devboard\GitHub\DoctrineTypes\Account\GitHubAccountTypeType;
-use Devboard\GitHub\DoctrineTypes\Branch\GitHubBranchNameType;
-use Devboard\GitHub\DoctrineTypes\Commit\GitHubCommitAuthorEmailType;
-use Devboard\GitHub\DoctrineTypes\Commit\GitHubCommitAuthorNameType;
-use Devboard\GitHub\DoctrineTypes\Commit\GitHubCommitCommitterEmailType;
-use Devboard\GitHub\DoctrineTypes\Commit\GitHubCommitCommitterNameType;
-use Devboard\GitHub\DoctrineTypes\Commit\GitHubCommitDateType;
-use Devboard\GitHub\DoctrineTypes\Commit\GitHubCommitMessageType;
-use Devboard\GitHub\DoctrineTypes\Commit\GitHubCommitShaType;
-use Devboard\GitHub\DoctrineTypes\Installation\GitHubApplicationIdType;
-use Devboard\GitHub\DoctrineTypes\Installation\GitHubInstallationAccessTokenUrlType;
-use Devboard\GitHub\DoctrineTypes\Installation\GitHubInstallationAccountType;
-use Devboard\GitHub\DoctrineTypes\Installation\GitHubInstallationCreatedAtType;
-use Devboard\GitHub\DoctrineTypes\Installation\GitHubInstallationEventsType;
-use Devboard\GitHub\DoctrineTypes\Installation\GitHubInstallationHtmlUrlType;
-use Devboard\GitHub\DoctrineTypes\Installation\GitHubInstallationIdType;
-use Devboard\GitHub\DoctrineTypes\Installation\GitHubInstallationPermissionsType;
-use Devboard\GitHub\DoctrineTypes\Installation\GitHubInstallationRepositoriesUrlType;
-use Devboard\GitHub\DoctrineTypes\Installation\GitHubInstallationRepositorySelectionType;
-use Devboard\GitHub\DoctrineTypes\Installation\GitHubInstallationUpdatedAtType;
-use Devboard\GitHub\DoctrineTypes\Repo\GitHubRepoApiUrlType;
-use Devboard\GitHub\DoctrineTypes\Repo\GitHubRepoCreatedAtType;
-use Devboard\GitHub\DoctrineTypes\Repo\GitHubRepoDescriptionType;
-use Devboard\GitHub\DoctrineTypes\Repo\GitHubRepoFullNameType;
-use Devboard\GitHub\DoctrineTypes\Repo\GitHubRepoGitUrlType;
-use Devboard\GitHub\DoctrineTypes\Repo\GitHubRepoHtmlUrlType;
-use Devboard\GitHub\DoctrineTypes\Repo\GitHubRepoIdType;
-use Devboard\GitHub\DoctrineTypes\Repo\GitHubRepoNameType;
-use Devboard\GitHub\DoctrineTypes\Repo\GitHubRepoPushedAtType;
-use Devboard\GitHub\DoctrineTypes\Repo\GitHubRepoSizeType;
-use Devboard\GitHub\DoctrineTypes\Repo\GitHubRepoUpdatedAtType;
-use Devboard\GitHub\DoctrineTypes\Tag\GitHubTagNameType;
-use Devboard\GitHub\DoctrineTypes\User\GitHubUserApiUrlType;
-use Devboard\GitHub\DoctrineTypes\User\GitHubUserAvatarUrlType;
-use Devboard\GitHub\DoctrineTypes\User\GitHubUserGravatarIdType;
-use Devboard\GitHub\DoctrineTypes\User\GitHubUserHtmlUrlType;
-use Devboard\GitHub\DoctrineTypes\User\GitHubUserIdType;
-use Devboard\GitHub\DoctrineTypes\User\GitHubUserLoginType;
+use DevboardLib\GitHubDoctrineType\Account\AccountApiUrlType;
+use DevboardLib\GitHubDoctrineType\Account\AccountAvatarUrlType;
+use DevboardLib\GitHubDoctrineType\Account\AccountGravatarIdType;
+use DevboardLib\GitHubDoctrineType\Account\AccountHtmlUrlType;
+use DevboardLib\GitHubDoctrineType\Account\AccountIdType;
+use DevboardLib\GitHubDoctrineType\Account\AccountLoginType;
+use DevboardLib\GitHubDoctrineType\Account\AccountTypeType;
+use DevboardLib\GitHubDoctrineType\Application\ApplicationIdType;
+use DevboardLib\GitHubDoctrineType\Branch\BranchNameType;
+use DevboardLib\GitHubDoctrineType\Commit\CommitAuthorEmailType;
+use DevboardLib\GitHubDoctrineType\Commit\CommitAuthorNameType;
+use DevboardLib\GitHubDoctrineType\Commit\CommitCommitterEmailType;
+use DevboardLib\GitHubDoctrineType\Commit\CommitCommitterNameType;
+use DevboardLib\GitHubDoctrineType\Commit\CommitDateType;
+use DevboardLib\GitHubDoctrineType\Commit\CommitMessageType;
+use DevboardLib\GitHubDoctrineType\Commit\CommitShaType;
+use DevboardLib\GitHubDoctrineType\Installation\InstallationAccessTokenUrlType;
+use DevboardLib\GitHubDoctrineType\Installation\InstallationAccountType;
+use DevboardLib\GitHubDoctrineType\Installation\InstallationCreatedAtType;
+use DevboardLib\GitHubDoctrineType\Installation\InstallationEventsType;
+use DevboardLib\GitHubDoctrineType\Installation\InstallationHtmlUrlType;
+use DevboardLib\GitHubDoctrineType\Installation\InstallationIdType;
+use DevboardLib\GitHubDoctrineType\Installation\InstallationPermissionsType;
+use DevboardLib\GitHubDoctrineType\Installation\InstallationRepositoriesUrlType;
+use DevboardLib\GitHubDoctrineType\Installation\InstallationRepositorySelectionType;
+use DevboardLib\GitHubDoctrineType\Installation\InstallationUpdatedAtType;
+use DevboardLib\GitHubDoctrineType\Repo\RepoApiUrlType;
+use DevboardLib\GitHubDoctrineType\Repo\RepoCreatedAtType;
+use DevboardLib\GitHubDoctrineType\Repo\RepoDescriptionType;
+use DevboardLib\GitHubDoctrineType\Repo\RepoFullNameType;
+use DevboardLib\GitHubDoctrineType\Repo\RepoGitUrlType;
+use DevboardLib\GitHubDoctrineType\Repo\RepoHtmlUrlType;
+use DevboardLib\GitHubDoctrineType\Repo\RepoIdType;
+use DevboardLib\GitHubDoctrineType\Repo\RepoNameType;
+use DevboardLib\GitHubDoctrineType\Repo\RepoPushedAtType;
+use DevboardLib\GitHubDoctrineType\Repo\RepoSizeType;
+use DevboardLib\GitHubDoctrineType\Repo\RepoUpdatedAtType;
+use DevboardLib\GitHubDoctrineType\Tag\TagNameType;
+use DevboardLib\GitHubDoctrineType\User\UserApiUrlType;
+use DevboardLib\GitHubDoctrineType\User\UserAvatarUrlType;
+use DevboardLib\GitHubDoctrineType\User\UserGravatarIdType;
+use DevboardLib\GitHubDoctrineType\User\UserHtmlUrlType;
+use DevboardLib\GitHubDoctrineType\User\UserIdType;
+use DevboardLib\GitHubDoctrineType\User\UserLoginType;
 use Doctrine\DBAL\Types\Type;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
@@ -57,55 +57,55 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 class DevboardLibGitHubDoctrineTypeBundle extends Bundle
 {
     private $types = [
-        'GitHubAccountApiUrl'     => GitHubAccountApiUrlType::class,
-        'GitHubAccountAvatarUrl'  => GitHubAccountAvatarUrlType::class,
-        'GitHubAccountGravatarId' => GitHubAccountGravatarIdType::class,
-        'GitHubAccountHtmlUrl'    => GitHubAccountHtmlUrlType::class,
-        'GitHubAccountId'         => GitHubAccountIdType::class,
-        'GitHubAccountLogin'      => GitHubAccountLoginType::class,
-        'GitHubAccountType'       => GitHubAccountTypeType::class,
+        'GitHubAccountApiUrl'     => AccountApiUrlType::class,
+        'GitHubAccountAvatarUrl'  => AccountAvatarUrlType::class,
+        'GitHubAccountGravatarId' => AccountGravatarIdType::class,
+        'GitHubAccountHtmlUrl'    => AccountHtmlUrlType::class,
+        'GitHubAccountId'         => AccountIdType::class,
+        'GitHubAccountLogin'      => AccountLoginType::class,
+        'GitHubAccountType'       => AccountTypeType::class,
 
-        'GitHubBranchName' => GitHubBranchNameType::class,
-        'GitHubTagName'    => GitHubTagNameType::class,
+        'GitHubBranchName' => BranchNameType::class,
+        'GitHubTagName'    => TagNameType::class,
 
-        'GitHubCommitAuthorEmail'    => GitHubCommitAuthorEmailType::class,
-        'GitHubCommitAuthorName'     => GitHubCommitAuthorNameType::class,
-        'GitHubCommitCommitterEmail' => GitHubCommitCommitterEmailType::class,
-        'GitHubCommitCommitterName'  => GitHubCommitCommitterNameType::class,
-        'GitHubCommitDate'           => GitHubCommitDateType::class,
-        'GitHubCommitMessage'        => GitHubCommitMessageType::class,
-        'GitHubCommitSha'            => GitHubCommitShaType::class,
+        'GitHubCommitAuthorEmail'    => CommitAuthorEmailType::class,
+        'GitHubCommitAuthorName'     => CommitAuthorNameType::class,
+        'GitHubCommitCommitterEmail' => CommitCommitterEmailType::class,
+        'GitHubCommitCommitterName'  => CommitCommitterNameType::class,
+        'GitHubCommitDate'           => CommitDateType::class,
+        'GitHubCommitMessage'        => CommitMessageType::class,
+        'GitHubCommitSha'            => CommitShaType::class,
 
-        'GitHubRepoApiUrl'      => GitHubRepoApiUrlType::class,
-        'GitHubRepoCreatedAt'   => GitHubRepoCreatedAtType::class,
-        'GitHubRepoDescription' => GitHubRepoDescriptionType::class,
-        'GitHubRepoGitUrl'      => GitHubRepoGitUrlType::class,
-        'GitHubRepoHtmlUrl'     => GitHubRepoHtmlUrlType::class,
-        'GitHubRepoId'          => GitHubRepoIdType::class,
-        'GitHubRepoFullName'    => GitHubRepoFullNameType::class,
-        'GitHubRepoName'        => GitHubRepoNameType::class,
-        'GitHubRepoPushedAt'    => GitHubRepoPushedAtType::class,
-        'GitHubRepoSize'        => GitHubRepoSizeType::class,
-        'GitHubRepoUpdatedAt'   => GitHubRepoUpdatedAtType::class,
+        'GitHubRepoApiUrl'      => RepoApiUrlType::class,
+        'GitHubRepoCreatedAt'   => RepoCreatedAtType::class,
+        'GitHubRepoDescription' => RepoDescriptionType::class,
+        'GitHubRepoGitUrl'      => RepoGitUrlType::class,
+        'GitHubRepoHtmlUrl'     => RepoHtmlUrlType::class,
+        'GitHubRepoId'          => RepoIdType::class,
+        'GitHubRepoFullName'    => RepoFullNameType::class,
+        'GitHubRepoName'        => RepoNameType::class,
+        'GitHubRepoPushedAt'    => RepoPushedAtType::class,
+        'GitHubRepoSize'        => RepoSizeType::class,
+        'GitHubRepoUpdatedAt'   => RepoUpdatedAtType::class,
 
-        'GitHubUserApiUrl'     => GitHubUserApiUrlType::class,
-        'GitHubUserAvatarUrl'  => GitHubUserAvatarUrlType::class,
-        'GitHubUserGravatarId' => GitHubUserGravatarIdType::class,
-        'GitHubUserHtmlUrl'    => GitHubUserHtmlUrlType::class,
-        'GitHubUserId'         => GitHubUserIdType::class,
-        'GitHubUserLogin'      => GitHubUserLoginType::class,
+        'GitHubUserApiUrl'     => UserApiUrlType::class,
+        'GitHubUserAvatarUrl'  => UserAvatarUrlType::class,
+        'GitHubUserGravatarId' => UserGravatarIdType::class,
+        'GitHubUserHtmlUrl'    => UserHtmlUrlType::class,
+        'GitHubUserId'         => UserIdType::class,
+        'GitHubUserLogin'      => UserLoginType::class,
 
-        'GitHubInstallationId'                  => GitHubInstallationIdType::class,
-        'GitHubInstallationAccount'             => GitHubInstallationAccountType::class,
-        'GitHubApplicationId'                   => GitHubApplicationIdType::class,
-        'GitHubInstallationRepositorySelection' => GitHubInstallationRepositorySelectionType::class,
-        'GitHubInstallationPermissions'         => GitHubInstallationPermissionsType::class,
-        'GitHubInstallationEvents'              => GitHubInstallationEventsType::class,
-        'GitHubInstallationAccessTokenUrl'      => GitHubInstallationAccessTokenUrlType::class,
-        'GitHubInstallationRepositoriesUrl'     => GitHubInstallationRepositoriesUrlType::class,
-        'GitHubInstallationHtmlUrl'             => GitHubInstallationHtmlUrlType::class,
-        'GitHubInstallationCreatedAt'           => GitHubInstallationCreatedAtType::class,
-        'GitHubInstallationUpdatedAt'           => GitHubInstallationUpdatedAtType::class,
+        'GitHubInstallationId'                  => InstallationIdType::class,
+        'GitHubInstallationAccount'             => InstallationAccountType::class,
+        'GitHubApplicationId'                   => ApplicationIdType::class,
+        'GitHubInstallationRepositorySelection' => InstallationRepositorySelectionType::class,
+        'GitHubInstallationPermissions'         => InstallationPermissionsType::class,
+        'GitHubInstallationEvents'              => InstallationEventsType::class,
+        'GitHubInstallationAccessTokenUrl'      => InstallationAccessTokenUrlType::class,
+        'GitHubInstallationRepositoriesUrl'     => InstallationRepositoriesUrlType::class,
+        'GitHubInstallationHtmlUrl'             => InstallationHtmlUrlType::class,
+        'GitHubInstallationCreatedAt'           => InstallationCreatedAtType::class,
+        'GitHubInstallationUpdatedAt'           => InstallationUpdatedAtType::class,
     ];
 
     public function __construct()
