@@ -16,10 +16,10 @@ jobs:
           command: composer install --no-interaction
       - run:
           name: Check codestandards
-          command: ./bin/phing check-codestandards
+          command: ./vendor/bin/phing check-codestandards
       - run:
           name: Static analysis
-          command: ./bin/phing phpstan
+          command: ./vendor/bin/phing phpstan
       - save_cache:
           key: cache-{{ checksum "composer.lock" }}
           paths:
@@ -44,13 +44,13 @@ jobs:
           command: composer install --no-interaction
       - run:
           name: Check codestandards
-          command: ./bin/phing check-codestandards
+          command: ./vendor/bin/phing check-codestandards
       - run:
           name: Static analysis
-          command: ./bin/phing phpstan
+          command: ./vendor/bin/phing phpstan
       - run:
           name: Static analysis
-          command: ./bin/phing phpstan
+          command: ./vendor/bin/phing phpstan
 
 workflows:
   version: 2

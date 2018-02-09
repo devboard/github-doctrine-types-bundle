@@ -11,23 +11,23 @@
 
     <target name="php-cs-fixer-fix" description="Run php-cs-fixer fix">
         <retry retrycount="3">
-            <exec command="bin/php-cs-fixer fix" passthru="true" checkreturn="true"/>
+            <exec command="vendor/bin/php-cs-fixer fix" passthru="true" checkreturn="true"/>
         </retry>
     </target>
 
     <target name="phpspec" description="Run phpspec">
-        <exec command="bin/phpspec run" passthru="true" checkreturn="true"/>
+        <exec command="vendor/bin/phpspec run" passthru="true" checkreturn="true"/>
     </target>
 
     <target name="phpunit" description="Run phpunit">
-        <exec command="bin/phpunit" passthru="true" checkreturn="true"/>
+        <exec command="vendor/bin/phpunit" passthru="true" checkreturn="true"/>
     </target>
     <target name="phpstan" description="Run phpstan">
-        <exec command="bin/phpstan analyse -l 4 -c phpstan.neon src" passthru="true" checkreturn="true"/>
+        <exec command="vendor/bin/phpstan analyse -l 4 -c phpstan.neon src" passthru="true" checkreturn="true"/>
     </target>
 
     <target name="php-cs-fixer-check" description="Run php-cs-fixer check">
-        <exec command="bin/php-cs-fixer fix --dry-run --diff" passthru="true" checkreturn="true"/>
+        <exec command="vendor/bin/php-cs-fixer fix --dry-run --diff" passthru="true" checkreturn="true"/>
     </target>
 
     <target name="phpmd" description="Run phpmd">
@@ -47,10 +47,10 @@
     </target>
 
     <target name="phpmd-task" description="Run php mess detector">
-        <exec command="bin/phpmd ${path} text phpmd.xml" passthru="true" checkreturn="true"/>
+        <exec command="vendor/bin/phpmd ${path} text phpmd.xml" passthru="true" checkreturn="true"/>
     </target>
     <target name="phpcs-task" description="Run php code sniffer">
-        <exec command="bin/phpcs --standard=phpcs.xml ${path} -n" passthru="true" checkreturn="true"/>
+        <exec command="vendor/bin/phpcs --standard=phpcs.xml ${path} -n" passthru="true" checkreturn="true"/>
     </target>
 
 </project>
