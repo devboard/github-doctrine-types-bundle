@@ -17,7 +17,7 @@
     "require": {
         "php":                                      ">=7.1.0",
         "devboard/github-doctrine-types":           "^0.1.0",
-        "symfony/http-kernel": "^3.3"
+        "symfony/http-kernel": "^3.3|^4"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "dev-long-line-fixers",
@@ -29,7 +29,7 @@
     },
     "config": {
         "platform": {
-            "php": "7.1.0"
+            "php": "7.1.3"
         }
     },
     "extra": {
