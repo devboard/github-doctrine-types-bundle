@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ea87d24713ecedbc3e03e8f723825faa",
+    "content-hash": "6fb7bd10db2d75cf2474c6545fe06e5f",
     "packages": [
         {
             "name": "devboard/git-interfaces",
@@ -41,20 +41,20 @@
         },
         {
             "name": "devboard/github-doctrine-types",
-            "version": "0.1.1",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/devboard/github-doctrine-types.git",
-                "reference": "3a4a2465fb76306aa6e8e4aebf81e547877288d8"
+                "reference": "aaf6f89ea39904a875c4131f8cb65c83bd830beb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/devboard/github-doctrine-types/zipball/3a4a2465fb76306aa6e8e4aebf81e547877288d8",
-                "reference": "3a4a2465fb76306aa6e8e4aebf81e547877288d8",
+                "url": "https://api.github.com/repos/devboard/github-doctrine-types/zipball/aaf6f89ea39904a875c4131f8cb65c83bd830beb",
+                "reference": "aaf6f89ea39904a875c4131f8cb65c83bd830beb",
                 "shasum": ""
             },
             "require": {
-                "devboard/lib-github": "^0.1.1",
+                "devboard/lib-github": "^0.2.0",
                 "doctrine/dbal": "^2.5",
                 "php": ">=7.1.0"
             },
@@ -83,7 +83,7 @@
             "license": [
                 "proprietary"
             ],
-            "time": "2018-03-21T07:27:03+00:00"
+            "time": "2018-03-25T11:03:08+00:00"
         },
         {
             "name": "devboard/lib-generix",
@@ -179,16 +179,16 @@
         },
         {
             "name": "devboard/lib-github",
-            "version": "0.1.6",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/devboard/lib-github.git",
-                "reference": "950606e2a0d86cb2286dfb8ba9d22400be6dbf3f"
+                "reference": "380d0a685a89895b483a0ef213ea65af88883f82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/devboard/lib-github/zipball/950606e2a0d86cb2286dfb8ba9d22400be6dbf3f",
-                "reference": "950606e2a0d86cb2286dfb8ba9d22400be6dbf3f",
+                "url": "https://api.github.com/repos/devboard/lib-github/zipball/380d0a685a89895b483a0ef213ea65af88883f82",
+                "reference": "380d0a685a89895b483a0ef213ea65af88883f82",
                 "shasum": ""
             },
             "require": {
@@ -223,7 +223,7 @@
                 "proprietary"
             ],
             "description": "Devboard lib for GitHub",
-            "time": "2018-03-19T11:27:26+00:00"
+            "time": "2018-03-25T07:38:56+00:00"
         },
         {
             "name": "doctrine/annotations",
