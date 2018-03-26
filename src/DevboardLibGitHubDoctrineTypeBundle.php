@@ -94,6 +94,7 @@ use DevboardLib\GitHubDoctrineType\PullRequest\PullRequestCreatedAtType;
 use DevboardLib\GitHubDoctrineType\PullRequest\PullRequestHtmlUrlType;
 use DevboardLib\GitHubDoctrineType\PullRequest\PullRequestIdType;
 use DevboardLib\GitHubDoctrineType\PullRequest\PullRequestNumberType;
+use DevboardLib\GitHubDoctrineType\PullRequest\PullRequestRootIdType;
 use DevboardLib\GitHubDoctrineType\PullRequest\PullRequestStateType;
 use DevboardLib\GitHubDoctrineType\PullRequest\PullRequestTitleType;
 use DevboardLib\GitHubDoctrineType\PullRequest\PullRequestUpdatedAtType;
@@ -241,19 +242,20 @@ class DevboardLibGitHubDoctrineTypeBundle extends Bundle
         'MilestoneUpdatedAt'   => MilestoneUpdatedAtType::class,
 
         // PullRequest
-        'PullRequestApiUrl'             => PullRequestApiUrlType::class,
-        'PullRequestAssigneeCollection' => PullRequestAssigneeCollectionType::class,
-        'PullRequestAssignee'           => PullRequestAssigneeType::class,
-        'PullRequestAuthor'             => PullRequestAuthorType::class,
-        'PullRequestBody'               => PullRequestBodyType::class,
-        'PullRequestClosedAt'           => PullRequestClosedAtType::class,
-        'PullRequestCreatedAt'          => PullRequestCreatedAtType::class,
-        'PullRequestHtmlUrl'            => PullRequestHtmlUrlType::class,
-        'PullRequestId'                 => PullRequestIdType::class,
-        'PullRequestNumber'             => PullRequestNumberType::class,
-        'PullRequestState'              => PullRequestStateType::class,
-        'PullRequestTitle'              => PullRequestTitleType::class,
-        'PullRequestUpdatedAt'          => PullRequestUpdatedAtType::class,
+        'GitHubPullRequestApiUrl'             => PullRequestApiUrlType::class,
+        'GitHubPullRequestAssigneeCollection' => PullRequestAssigneeCollectionType::class,
+        'GitHubPullRequestAssignee'           => PullRequestAssigneeType::class,
+        'GitHubPullRequestAuthor'             => PullRequestAuthorType::class,
+        'GitHubPullRequestBody'               => PullRequestBodyType::class,
+        'GitHubPullRequestClosedAt'           => PullRequestClosedAtType::class,
+        'GitHubPullRequestCreatedAt'          => PullRequestCreatedAtType::class,
+        'GitHubPullRequestHtmlUrl'            => PullRequestHtmlUrlType::class,
+        'GitHubPullRequestId'                 => PullRequestIdType::class,
+        'GitHubPullRequestNumber'             => PullRequestNumberType::class,
+        'GitHubPullRequestState'              => PullRequestStateType::class,
+        'GitHubPullRequestTitle'              => PullRequestTitleType::class,
+        'GitHubPullRequestUpdatedAt'          => PullRequestUpdatedAtType::class,
+        'GitHubPullRequestRootId'             => PullRequestRootIdType::class,
 
         // Repo
         'GitHubRepoApiUrl'      => RepoApiUrlType::class,
