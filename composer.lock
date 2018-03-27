@@ -41,16 +41,16 @@
         },
         {
             "name": "devboard/github-doctrine-types",
-            "version": "0.2.0",
+            "version": "0.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/devboard/github-doctrine-types.git",
-                "reference": "aaf6f89ea39904a875c4131f8cb65c83bd830beb"
+                "reference": "b32eba0391433c566202dda2a44859d479964f14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/devboard/github-doctrine-types/zipball/aaf6f89ea39904a875c4131f8cb65c83bd830beb",
-                "reference": "aaf6f89ea39904a875c4131f8cb65c83bd830beb",
+                "url": "https://api.github.com/repos/devboard/github-doctrine-types/zipball/b32eba0391433c566202dda2a44859d479964f14",
+                "reference": "b32eba0391433c566202dda2a44859d479964f14",
                 "shasum": ""
             },
             "require": {
@@ -83,7 +83,7 @@
             "license": [
                 "proprietary"
             ],
-            "time": "2018-03-25T11:03:08+00:00"
+            "time": "2018-03-26T18:35:42+00:00"
         },
         {
             "name": "devboard/lib-generix",
