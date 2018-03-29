@@ -98,6 +98,10 @@ use DevboardLib\GitHubDoctrineType\PullRequest\PullRequestRootIdType;
 use DevboardLib\GitHubDoctrineType\PullRequest\PullRequestStateType;
 use DevboardLib\GitHubDoctrineType\PullRequest\PullRequestTitleType;
 use DevboardLib\GitHubDoctrineType\PullRequest\PullRequestUpdatedAtType;
+use DevboardLib\GitHubDoctrineType\PullRequestReview\PullRequestReviewBodyType;
+use DevboardLib\GitHubDoctrineType\PullRequestReview\PullRequestReviewIdType;
+use DevboardLib\GitHubDoctrineType\PullRequestReview\PullRequestReviewStateType;
+use DevboardLib\GitHubDoctrineType\PullRequestReview\PullRequestReviewSubmittedAtType;
 use DevboardLib\GitHubDoctrineType\ReferenceNameType;
 use DevboardLib\GitHubDoctrineType\Repo\RepoAccessPermissionsType;
 use DevboardLib\GitHubDoctrineType\Repo\RepoCreatedAtType;
@@ -256,6 +260,12 @@ class DevboardLibGitHubDoctrineTypeBundle extends Bundle
         'GitHubPullRequestTitle'              => PullRequestTitleType::class,
         'GitHubPullRequestUpdatedAt'          => PullRequestUpdatedAtType::class,
         'GitHubPullRequestRootId'             => PullRequestRootIdType::class,
+
+        // PullRequestReview
+        'GitHubPullRequestReviewBody'           => PullRequestReviewBodyType::class,
+        'GitHubPullRequestReviewId'             => PullRequestReviewIdType::class,
+        'GitHubPullRequestReviewState'          => PullRequestReviewStateType::class,
+        'GitHubPullRequestReviewSubmittedAt'    => PullRequestReviewSubmittedAtType::class,
 
         // Repo
         'GitHubRepoApiUrl'      => RepoApiUrlType::class,
