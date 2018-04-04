@@ -18,7 +18,9 @@
         "php":                                      ">=7.1.0",
         "devboard/github-doctrine-types":           "0.4.*@dev",
         "symfony/http-kernel": "^3.3|^4",
-        "devboard/lib-github": "0.4.*@dev"
+        "devboard/lib-github": "0.4.*@dev",
+        "devboard/lib-generix": "0.4.*@dev",
+        "devboard/lib-git": "0.4.*@dev"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "dev-long-line-fixers",
