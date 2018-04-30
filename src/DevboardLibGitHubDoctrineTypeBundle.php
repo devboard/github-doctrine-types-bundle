@@ -4,9 +4,7 @@ declare(strict_types=1);
 
 namespace DevboardLib\GitHubDoctrineTypeBundle;
 
-use DevboardLib\GitHubDoctrineType\Account\AccountApiUrlType;
 use DevboardLib\GitHubDoctrineType\Account\AccountAvatarUrlType;
-use DevboardLib\GitHubDoctrineType\Account\AccountHtmlUrlType;
 use DevboardLib\GitHubDoctrineType\Account\AccountIdType;
 use DevboardLib\GitHubDoctrineType\Account\AccountLoginType;
 use DevboardLib\GitHubDoctrineType\Account\AccountTypeType;
@@ -15,13 +13,11 @@ use DevboardLib\GitHubDoctrineType\Branch\BranchNameType;
 use DevboardLib\GitHubDoctrineType\Build\BuildIdType;
 use DevboardLib\GitHubDoctrineType\Build\BuildStatusType;
 use DevboardLib\GitHubDoctrineType\Commit\AuthorNameType;
-use DevboardLib\GitHubDoctrineType\Commit\CommitApiUrlType;
 use DevboardLib\GitHubDoctrineType\Commit\CommitAuthorDetailsType;
 use DevboardLib\GitHubDoctrineType\Commit\CommitAuthorType;
 use DevboardLib\GitHubDoctrineType\Commit\CommitCommitterDetailsType;
 use DevboardLib\GitHubDoctrineType\Commit\CommitCommitterType;
 use DevboardLib\GitHubDoctrineType\Commit\CommitDateType;
-use DevboardLib\GitHubDoctrineType\Commit\CommitHtmlUrlType;
 use DevboardLib\GitHubDoctrineType\Commit\CommitMessageType;
 use DevboardLib\GitHubDoctrineType\Commit\CommitParent\ParentApiUrlType;
 use DevboardLib\GitHubDoctrineType\Commit\CommitParent\ParentHtmlUrlType;
@@ -48,50 +44,41 @@ use DevboardLib\GitHubDoctrineType\Installation\InstallationPermissionsType;
 use DevboardLib\GitHubDoctrineType\Installation\InstallationRepositoriesUrlType;
 use DevboardLib\GitHubDoctrineType\Installation\InstallationRepositorySelectionType;
 use DevboardLib\GitHubDoctrineType\Installation\InstallationUpdatedAtType;
-use DevboardLib\GitHubDoctrineType\Issue\IssueApiUrlType;
 use DevboardLib\GitHubDoctrineType\Issue\IssueAssigneeCollectionType;
 use DevboardLib\GitHubDoctrineType\Issue\IssueAssigneeType;
 use DevboardLib\GitHubDoctrineType\Issue\IssueAuthorType;
 use DevboardLib\GitHubDoctrineType\Issue\IssueBodyType;
 use DevboardLib\GitHubDoctrineType\Issue\IssueClosedAtType;
 use DevboardLib\GitHubDoctrineType\Issue\IssueCreatedAtType;
-use DevboardLib\GitHubDoctrineType\Issue\IssueHtmlUrlType;
 use DevboardLib\GitHubDoctrineType\Issue\IssueIdType;
 use DevboardLib\GitHubDoctrineType\Issue\IssueNumberType;
 use DevboardLib\GitHubDoctrineType\Issue\IssueStateType;
 use DevboardLib\GitHubDoctrineType\Issue\IssueTitleType;
 use DevboardLib\GitHubDoctrineType\Issue\IssueUpdatedAtType;
-use DevboardLib\GitHubDoctrineType\IssueComment\IssueCommentApiUrlType;
 use DevboardLib\GitHubDoctrineType\IssueComment\IssueCommentAuthorType;
 use DevboardLib\GitHubDoctrineType\IssueComment\IssueCommentBodyType;
 use DevboardLib\GitHubDoctrineType\IssueComment\IssueCommentCreatedAtType;
-use DevboardLib\GitHubDoctrineType\IssueComment\IssueCommentHtmlUrlType;
 use DevboardLib\GitHubDoctrineType\IssueComment\IssueCommentIdType;
 use DevboardLib\GitHubDoctrineType\IssueComment\IssueCommentUpdatedAtType;
-use DevboardLib\GitHubDoctrineType\Label\LabelApiUrlType;
 use DevboardLib\GitHubDoctrineType\Label\LabelColorType;
 use DevboardLib\GitHubDoctrineType\Label\LabelIdType;
 use DevboardLib\GitHubDoctrineType\Label\LabelNameType;
-use DevboardLib\GitHubDoctrineType\Milestone\MilestoneApiUrlType;
 use DevboardLib\GitHubDoctrineType\Milestone\MilestoneClosedAtType;
 use DevboardLib\GitHubDoctrineType\Milestone\MilestoneCreatedAtType;
 use DevboardLib\GitHubDoctrineType\Milestone\MilestoneCreatorType;
 use DevboardLib\GitHubDoctrineType\Milestone\MilestoneDescriptionType;
 use DevboardLib\GitHubDoctrineType\Milestone\MilestoneDueOnType;
-use DevboardLib\GitHubDoctrineType\Milestone\MilestoneHtmlUrlType;
 use DevboardLib\GitHubDoctrineType\Milestone\MilestoneIdType;
 use DevboardLib\GitHubDoctrineType\Milestone\MilestoneNumberType;
 use DevboardLib\GitHubDoctrineType\Milestone\MilestoneStateType;
 use DevboardLib\GitHubDoctrineType\Milestone\MilestoneTitleType;
 use DevboardLib\GitHubDoctrineType\Milestone\MilestoneUpdatedAtType;
-use DevboardLib\GitHubDoctrineType\PullRequest\PullRequestApiUrlType;
 use DevboardLib\GitHubDoctrineType\PullRequest\PullRequestAssigneeCollectionType;
 use DevboardLib\GitHubDoctrineType\PullRequest\PullRequestAssigneeType;
 use DevboardLib\GitHubDoctrineType\PullRequest\PullRequestAuthorType;
 use DevboardLib\GitHubDoctrineType\PullRequest\PullRequestBodyType;
 use DevboardLib\GitHubDoctrineType\PullRequest\PullRequestClosedAtType;
 use DevboardLib\GitHubDoctrineType\PullRequest\PullRequestCreatedAtType;
-use DevboardLib\GitHubDoctrineType\PullRequest\PullRequestHtmlUrlType;
 use DevboardLib\GitHubDoctrineType\PullRequest\PullRequestIdType;
 use DevboardLib\GitHubDoctrineType\PullRequest\PullRequestNumberType;
 use DevboardLib\GitHubDoctrineType\PullRequest\PullRequestRootIdType;
@@ -131,9 +118,7 @@ use DevboardLib\GitHubDoctrineType\Status\StatusIdType;
 use DevboardLib\GitHubDoctrineType\Status\StatusStateType;
 use DevboardLib\GitHubDoctrineType\Status\StatusTargetUrlType;
 use DevboardLib\GitHubDoctrineType\Tag\TagNameType;
-use DevboardLib\GitHubDoctrineType\User\UserApiUrlType;
 use DevboardLib\GitHubDoctrineType\User\UserAvatarUrlType;
-use DevboardLib\GitHubDoctrineType\User\UserHtmlUrlType;
 use DevboardLib\GitHubDoctrineType\User\UserIdType;
 use DevboardLib\GitHubDoctrineType\User\UserLoginType;
 use Doctrine\DBAL\Types\Type;
@@ -148,9 +133,7 @@ class DevboardLibGitHubDoctrineTypeBundle extends Bundle
         // Application
         'ApplicationId' => ApplicationIdType::class,
 
-        'GitHubAccountApiUrl'    => AccountApiUrlType::class,
         'GitHubAccountAvatarUrl' => AccountAvatarUrlType::class,
-        'GitHubAccountHtmlUrl'   => AccountHtmlUrlType::class,
         'GitHubAccountId'        => AccountIdType::class,
         'GitHubAccountLogin'     => AccountLoginType::class,
         'GitHubAccountType'      => AccountTypeType::class,
@@ -171,10 +154,8 @@ class DevboardLibGitHubDoctrineTypeBundle extends Bundle
         'GitHubCommitSha'           => CommitShaType::class,
         'GitHubCommitAuthor'        => CommitAuthorType::class,
         'GitHubCommitCommitter'     => CommitCommitterType::class,
-        'CommitApiUrl'              => CommitApiUrlType::class,
         'CommitAuthorDetails'       => CommitAuthorDetailsType::class,
         'CommitCommitterDetails'    => CommitCommitterDetailsType::class,
-        'CommitHtmlUrl'             => CommitHtmlUrlType::class,
         'ParentApiUrl'              => ParentApiUrlType::class,
         'ParentHtmlUrl'             => ParentHtmlUrlType::class,
         'CommitParent'              => CommitParentType::class,
@@ -202,14 +183,12 @@ class DevboardLibGitHubDoctrineTypeBundle extends Bundle
         'GitHubInstallationUpdatedAt'           => InstallationUpdatedAtType::class,
 
         // Issue
-        'GitHubIssueApiUrl'             => IssueApiUrlType::class,
         'GitHubIssueAssigneeCollection' => IssueAssigneeCollectionType::class,
         'GitHubIssueAssignee'           => IssueAssigneeType::class,
         'GitHubIssueAuthor'             => IssueAuthorType::class,
         'GitHubIssueBody'               => IssueBodyType::class,
         'GitHubIssueClosedAt'           => IssueClosedAtType::class,
         'GitHubIssueCreatedAt'          => IssueCreatedAtType::class,
-        'GitHubIssueHtmlUrl'            => IssueHtmlUrlType::class,
         'GitHubIssueId'                 => IssueIdType::class,
         'GitHubIssueNumber'             => IssueNumberType::class,
         'GitHubIssueState'              => IssueStateType::class,
@@ -217,28 +196,23 @@ class DevboardLibGitHubDoctrineTypeBundle extends Bundle
         'GitHubIssueUpdatedAt'          => IssueUpdatedAtType::class,
 
         // IssueComment
-        'GitHubIssueCommentApiUrl'    => IssueCommentApiUrlType::class,
         'GitHubIssueCommentAuthor'    => IssueCommentAuthorType::class,
         'GitHubIssueCommentBody'      => IssueCommentBodyType::class,
         'GitHubIssueCommentCreatedAt' => IssueCommentCreatedAtType::class,
-        'GitHubIssueCommentHtmlUrl'   => IssueCommentHtmlUrlType::class,
         'GitHubIssueCommentId'        => IssueCommentIdType::class,
         'GitHubIssueCommentUpdatedAt' => IssueCommentUpdatedAtType::class,
 
         // Label
-        'GitHubLabelApiUrl' => LabelApiUrlType::class,
         'GitHubLabelColor'  => LabelColorType::class,
         'GitHubLabelId'     => LabelIdType::class,
         'GitHubLabelName'   => LabelNameType::class,
 
         // Milestone
-        'GitHubMilestoneApiUrl'      => MilestoneApiUrlType::class,
         'GitHubMilestoneClosedAt'    => MilestoneClosedAtType::class,
         'GitHubMilestoneCreatedAt'   => MilestoneCreatedAtType::class,
         'GitHubMilestoneCreator'     => MilestoneCreatorType::class,
         'GitHubMilestoneDescription' => MilestoneDescriptionType::class,
         'GitHubMilestoneDueOn'       => MilestoneDueOnType::class,
-        'GitHubMilestoneHtmlUrl'     => MilestoneHtmlUrlType::class,
         'GitHubMilestoneId'          => MilestoneIdType::class,
         'GitHubMilestoneNumber'      => MilestoneNumberType::class,
         'GitHubMilestoneState'       => MilestoneStateType::class,
@@ -246,14 +220,12 @@ class DevboardLibGitHubDoctrineTypeBundle extends Bundle
         'GitHubMilestoneUpdatedAt'   => MilestoneUpdatedAtType::class,
 
         // PullRequest
-        'GitHubPullRequestApiUrl'             => PullRequestApiUrlType::class,
         'GitHubPullRequestAssigneeCollection' => PullRequestAssigneeCollectionType::class,
         'GitHubPullRequestAssignee'           => PullRequestAssigneeType::class,
         'GitHubPullRequestAuthor'             => PullRequestAuthorType::class,
         'GitHubPullRequestBody'               => PullRequestBodyType::class,
         'GitHubPullRequestClosedAt'           => PullRequestClosedAtType::class,
         'GitHubPullRequestCreatedAt'          => PullRequestCreatedAtType::class,
-        'GitHubPullRequestHtmlUrl'            => PullRequestHtmlUrlType::class,
         'GitHubPullRequestId'                 => PullRequestIdType::class,
         'GitHubPullRequestNumber'             => PullRequestNumberType::class,
         'GitHubPullRequestState'              => PullRequestStateType::class,
@@ -294,9 +266,7 @@ class DevboardLibGitHubDoctrineTypeBundle extends Bundle
         'GitHubStatusTargetUrl'   => StatusTargetUrlType::class,
 
         // User
-        'GitHubUserApiUrl'    => UserApiUrlType::class,
         'GitHubUserAvatarUrl' => UserAvatarUrlType::class,
-        'GitHubUserHtmlUrl'   => UserHtmlUrlType::class,
         'GitHubUserId'        => UserIdType::class,
         'GitHubUserLogin'     => UserLoginType::class,
 
