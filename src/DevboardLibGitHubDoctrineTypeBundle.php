@@ -19,14 +19,11 @@ use DevboardLib\GitHubDoctrineType\Commit\CommitCommitterDetailsType;
 use DevboardLib\GitHubDoctrineType\Commit\CommitCommitterType;
 use DevboardLib\GitHubDoctrineType\Commit\CommitDateType;
 use DevboardLib\GitHubDoctrineType\Commit\CommitMessageType;
-use DevboardLib\GitHubDoctrineType\Commit\CommitParent\ParentApiUrlType;
-use DevboardLib\GitHubDoctrineType\Commit\CommitParent\ParentHtmlUrlType;
 use DevboardLib\GitHubDoctrineType\Commit\CommitParentType;
 use DevboardLib\GitHubDoctrineType\Commit\CommitShaType;
 use DevboardLib\GitHubDoctrineType\Commit\CommitterNameType;
 use DevboardLib\GitHubDoctrineType\Commit\CommitTreeType;
 use DevboardLib\GitHubDoctrineType\Commit\CommitVerificationType;
-use DevboardLib\GitHubDoctrineType\Commit\Tree\TreeApiUrlType;
 use DevboardLib\GitHubDoctrineType\Commit\Verification\VerificationPayloadType;
 use DevboardLib\GitHubDoctrineType\Commit\Verification\VerificationReasonType;
 use DevboardLib\GitHubDoctrineType\Commit\Verification\VerificationSignatureType;
@@ -156,12 +153,9 @@ class DevboardLibGitHubDoctrineTypeBundle extends Bundle
         'GitHubCommitCommitter'     => CommitCommitterType::class,
         'CommitAuthorDetails'       => CommitAuthorDetailsType::class,
         'CommitCommitterDetails'    => CommitCommitterDetailsType::class,
-        'ParentApiUrl'              => ParentApiUrlType::class,
-        'ParentHtmlUrl'             => ParentHtmlUrlType::class,
         'CommitParent'              => CommitParentType::class,
         'CommitTree'                => CommitTreeType::class,
         'CommitVerification'        => CommitVerificationType::class,
-        'TreeApiUrl'                => TreeApiUrlType::class,
         'VerificationPayload'       => VerificationPayloadType::class,
         'VerificationReason'        => VerificationReasonType::class,
         'VerificationSignature'     => VerificationSignatureType::class,
