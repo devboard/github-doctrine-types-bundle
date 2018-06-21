@@ -19,7 +19,6 @@
         "devboard/github-doctrine-types":           "0.6.*@dev",
         "symfony/http-kernel": "^3.3|^4",
         "devboard/lib-github": "0.6.*@dev",
-        "devboard/lib-generix": "0.5.*@dev",
         "devboard/lib-git": "0.5.*@dev"
     },
     "require-dev": {
