@@ -118,6 +118,7 @@ use DevboardLib\GitHubDoctrineType\Tag\TagNameType;
 use DevboardLib\GitHubDoctrineType\User\UserAvatarUrlType;
 use DevboardLib\GitHubDoctrineType\User\UserIdType;
 use DevboardLib\GitHubDoctrineType\User\UserLoginType;
+use Doctrine\DBAL\Platforms\AbstractPlatform;
 use Doctrine\DBAL\Types\Type;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
@@ -126,6 +127,7 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
  */
 class DevboardLibGitHubDoctrineTypeBundle extends Bundle
 {
+    /** @var array */
     private $types = [
         // Application
         'ApplicationId' => ApplicationIdType::class,
@@ -288,14 +290,14 @@ class DevboardLibGitHubDoctrineTypeBundle extends Bundle
         }
     }
 
-    public function boot()
+    public function boot(): void
     {
         foreach (array_keys($this->types) as $name) {
             $this->getDatabasePlatform()->registerDoctrineTypeMapping($name, $name);
         }
     }
 
-    private function getDatabasePlatform()
+    private function getDatabasePlatform(): AbstractPlatform
     {
         return $this->container
             ->get('doctrine.orm.entity_manager')
