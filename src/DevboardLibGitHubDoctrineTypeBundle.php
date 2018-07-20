@@ -30,7 +30,6 @@ use DevboardLib\GitHubDoctrineType\Commit\Verification\VerificationSignatureType
 use DevboardLib\GitHubDoctrineType\Commit\Verification\VerificationVerifiedType;
 use DevboardLib\GitHubDoctrineType\External\ExternalServiceType;
 use DevboardLib\GitHubDoctrineType\Generix\EmailAddressType;
-use DevboardLib\GitHubDoctrineType\Generix\GravatarIdType;
 use DevboardLib\GitHubDoctrineType\Installation\InstallationAccessTokenUrlType;
 use DevboardLib\GitHubDoctrineType\Installation\InstallationAccountType;
 use DevboardLib\GitHubDoctrineType\Installation\InstallationCreatedAtType;
@@ -271,7 +270,6 @@ class DevboardLibGitHubDoctrineTypeBundle extends Bundle
         'GitHubUserLogin'     => UserLoginType::class,
 
         // Generix
-        'GravatarId'   => GravatarIdType::class,
         'EmailAddress' => EmailAddressType::class,
 
         // RepoOwner
