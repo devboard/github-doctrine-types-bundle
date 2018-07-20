@@ -108,12 +108,13 @@ use DevboardLib\GitHubDoctrineType\Repo\RepoStats\RepoSizeType;
 use DevboardLib\GitHubDoctrineType\Repo\RepoStatsType;
 use DevboardLib\GitHubDoctrineType\Repo\RepoTimestampsType;
 use DevboardLib\GitHubDoctrineType\Repo\RepoUpdatedAtType;
-use DevboardLib\GitHubDoctrineType\Status\StatusContextType;
-use DevboardLib\GitHubDoctrineType\Status\StatusCreatorType;
-use DevboardLib\GitHubDoctrineType\Status\StatusDescriptionType;
-use DevboardLib\GitHubDoctrineType\Status\StatusIdType;
 use DevboardLib\GitHubDoctrineType\Status\StatusStateType;
-use DevboardLib\GitHubDoctrineType\Status\StatusTargetUrlType;
+use DevboardLib\GitHubDoctrineType\StatusCheck\StatusCheckContextType;
+use DevboardLib\GitHubDoctrineType\StatusCheck\StatusCheckCreatorType;
+use DevboardLib\GitHubDoctrineType\StatusCheck\StatusCheckDescriptionType;
+use DevboardLib\GitHubDoctrineType\StatusCheck\StatusCheckIdType;
+use DevboardLib\GitHubDoctrineType\StatusCheck\StatusCheckStateType;
+use DevboardLib\GitHubDoctrineType\StatusCheck\StatusCheckTargetUrlType;
 use DevboardLib\GitHubDoctrineType\Tag\TagNameType;
 use DevboardLib\GitHubDoctrineType\User\UserAvatarUrlType;
 use DevboardLib\GitHubDoctrineType\User\UserIdType;
@@ -255,11 +256,14 @@ class DevboardLibGitHubDoctrineTypeBundle extends Bundle
 
         // Status
         'GitHubStatusState'       => StatusStateType::class,
-        'GitHubStatusContext'     => StatusContextType::class,
-        'GitHubStatusCreator'     => StatusCreatorType::class,
-        'GitHubStatusDescription' => StatusDescriptionType::class,
-        'GitHubStatusId'          => StatusIdType::class,
-        'GitHubStatusTargetUrl'   => StatusTargetUrlType::class,
+
+        // StatusCheck
+        'GitHubStatusCheckState'       => StatusCheckStateType::class,
+        'GitHubStatusCheckContext'     => StatusCheckContextType::class,
+        'GitHubStatusCheckCreator'     => StatusCheckCreatorType::class,
+        'GitHubStatusCheckDescription' => StatusCheckDescriptionType::class,
+        'GitHubStatusCheckId'          => StatusCheckIdType::class,
+        'GitHubStatusCheckTargetUrl'   => StatusCheckTargetUrlType::class,
 
         // User
         'GitHubUserAvatarUrl' => UserAvatarUrlType::class,
