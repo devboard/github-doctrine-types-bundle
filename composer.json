@@ -16,8 +16,12 @@
     },
     "require": {
         "php":                                      ">=7.1.0",
-        "devboard/github-doctrine-types":           "^1.1",
-        "symfony/http-kernel": "^3.3|^4"
+        "devboard/github-doctrine-types":           "^2.0@dev",
+        "symfony/http-kernel": "^3.3|^4",
+        "devboard/lib-git": "^2.0@dev",
+        "devboard/git-interfaces": "^2.0@dev",
+        "devboard/lib-github": "^2.0@dev",
+        "devboard/lib-generix": "^2.0@dev"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "dev-long-line-fixers",
