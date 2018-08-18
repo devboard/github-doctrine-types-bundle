@@ -3,4 +3,5 @@ parameters:
 	    - '#Call to an undefined method object::getConnection\(\).#'
 includes:
 	- vendor/phpstan/phpstan-strict-rules/rules.neon
+	- vendor/phpstan/phpstan-mockery/extension.neon
 	
